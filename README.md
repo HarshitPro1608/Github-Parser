@@ -1,4 +1,4 @@
-## Repository Deendency Extraction using Github OAuth in Flask 
+## Repository Dependency Extraction using Github OAuth in Flask 
 
 ### Overview:
   * This project is about implementing OAuth login (Github) and getting list of dependencies for a repository in your Flask app using Authlib.

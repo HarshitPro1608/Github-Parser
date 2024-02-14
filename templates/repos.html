@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories: {{ user }}</title>
+</head>
+<body>
+    <h1>GitHub Repositories for {{ user }}</h1>
+    <ul>
+        {% for repo in repos %}
+        <li><a href="{{ url_for('parse_pom_xml_files', repo_name=repo) }}">{{ repo }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

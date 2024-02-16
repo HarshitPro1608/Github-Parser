@@ -14,3 +14,9 @@ h1 {
   margin-right: 1.5rem;
   margin-top: -5px;
 }
+
+.home-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

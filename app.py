@@ -9,8 +9,8 @@ app = Flask(__name__)
 oauth = OAuth(app)
 
 app.config['SECRET_KEY'] = "THIS SHOULD BE SECRET"
-app.config['GITHUB_CLIENT_ID'] = "01a4e1bb9ae4a9ed2907"
-app.config['GITHUB_CLIENT_SECRET'] = "90ec1c66fc46045b94b342a2687192ce9b105f10"
+app.config['GITHUB_CLIENT_ID'] = "<client-id>"
+app.config['GITHUB_CLIENT_SECRET'] = "<client-secret>"
 
 
 github = oauth.register (

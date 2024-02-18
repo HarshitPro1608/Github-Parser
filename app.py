@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, redirect
 from authlib.integrations.flask_client import OAuth
 from github import Github
 from xml.etree import ElementTree as ET
+import os
 
 
 app = Flask(__name__)
@@ -9,8 +10,8 @@ app = Flask(__name__)
 oauth = OAuth(app)
 
 app.config['SECRET_KEY'] = "THIS SHOULD BE SECRET"
-app.config['GITHUB_CLIENT_ID'] = "<client-id>"
-app.config['GITHUB_CLIENT_SECRET'] = "<client-secret>"
+app.config['GITHUB_CLIENT_ID'] = os.environ.get('GITHUB_CLIENT_ID')
+app.config['GITHUB_CLIENT_SECRET'] = os.environ.get('GITHUB_CLIENT_SECRET')
 
 
 github = oauth.register (

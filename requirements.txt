@@ -1,3 +1,4 @@
 Flask==2.0.2
 authlib==0.15.4
 github==1.2.7
+aiohttp==3.9.0b0
